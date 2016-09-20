@@ -4,3 +4,5 @@ version = "0.1.0"
 authors = ["Jeff Parsons <jeff.parsons@stileeducation.com>"]
 
 [dependencies]
+iron = "0.4.0"
+staticfile = "*"
