@@ -1,0 +1,69 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Reaction bar */
+.reaction-strip {
+    display: inline-block;
+    opacity: 0.1;
+}
+li {
+    /* For the little counter dealie */
+    position: relative;
+}
+li > .reaction-strip:hover {
+    opacity: 1;
+}
+button {
+    border: 3px solid transparent;
+    margin-left: 10px;
+}
+button > img {
+    height: 30px;
+}
+button:hover {
+    border: 3px solid green;
+}
+
+/* All submissions, comments, etc. have boxes around their whole subtree. */
+
+ul {
+    padding-left: 10px;
+}
+
+li {
+    border-left: 2px solid lightgrey;
+    padding-left: 20px;
+    padding-top: 2px;
+    list-style-type: none;
+    background: #f8f8f8;
+}
+
+/* Counter dealie */
+
+.commentCount {
+    position: absolute;
+    top: 0;
+    left: 64px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+}
+.commentCount > span {
+    position: relative;
+    top: 4px;
+}
