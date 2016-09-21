@@ -76,9 +76,10 @@ fn main() {
     mount.mount("/api", api_handler);
     mount.mount("/", static_handler);
 
-    let addr = "0.0.0.0:8888";
+    let port = 8888;
+    let addr: &str = &format!("0.0.0.0:{}", port);
     println!("Listening on {}...", addr);
-    println!("Try http://{}!", addr);
+    println!("Try http://localhost:{}!", port);
     Iron::new(mount).http(addr).unwrap();
 }
 
