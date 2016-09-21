@@ -1,5 +1,5 @@
 [package]
-name = "reddit4"
+name = "iron_talk_demo"
 version = "0.1.0"
 authors = ["Jeff Parsons <jeff.parsons@stileeducation.com>"]
 
@@ -8,9 +8,9 @@ iron = "0.4.0"
 staticfile = "*"
 mount = "0.2.1"
 router = "0.4.0"
-serde = "= 0.8.2"
-serde_json = "= 0.8.1"
-serde_macros = "= 0.8.2"
+serde = "=0.8.2"
+serde_json = "=0.8.1"
+serde_macros = "=0.8.2"
 uuid = { version = "0.2", features = ["v4"] }
 bodyparser = "0.4.1"
 diesel = "0.7.1"
